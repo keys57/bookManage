@@ -14,4 +14,5 @@ func LoadAPIRouter(r *gin.Engine) {
 	v1.POST("book", controller.CreateBookHandler)
 	v1.GET("booklist", controller.GetBookListHandler)
 	v1.GET("booklist/:id", controller.GetBookDetailHandler)
+	v1.POST("/upload", controller.UpLoad)
 }
